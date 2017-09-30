@@ -21,8 +21,6 @@ weight = 5
  
 +++
 
-# Hi,
-
 I am a software engineer based in Istanbul, Turkey. 
 
 My main focus is crafting products with a robust architecture that provide a natural user experience.
