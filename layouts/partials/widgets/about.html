@@ -17,9 +17,9 @@
       <div class="portrait-title">
         <h2 itemprop="name">{{ $.Site.Params.name }}</h2>
         <h3 itemprop="jobTitle">{{ $.Site.Params.role }}</h3>
-        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+        <h3>
           {{ with $.Site.Params.organization_url }}<a href="{{ . }}" target="_blank" itemprop="url">{{ end }}
-          <span itemprop="name"><i class="fa fa-map-marker"></i> {{ $.Site.Params.organization }}</span>
+          <span><i class="fa fa-map-marker"></i> {{ $.Site.Params.organization }}</span>
           {{ if $.Site.Params.organization_url }}</a>{{ end }}
         </h3>
       </div>
