@@ -1,0 +1,25 @@
+{{ with .Site.Params.social }}
+<ul>
+  {{ range sort . "weight" }}
+    {{ if .icon }}
+      <li>
+        <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
+          <i class="{{ .icon }}" aria-hidden="true"></i>
+        </a>
+      </li>
+    {{ else }}
+      <li>
+        <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>
+{{ end }}
+
+<p>I am a software engineer based in Istanbul, Turkey.</p>
+
+<p>My main focus is crafting products with a robust architecture that provide a natural user experience.</p>
+
+<p>I am passionate about free software and have worked on various <a href="https://github.com/ercanozkaya" target="_blank">open source projects</a> throughout my career. Most notable is the <a href="https://www.joomla.org/" target="_blank">Joomla</a> project where I took the role of release manager and also participated in the <a href="https://summerofcode.withgoogle.com/" target="_blank">Google Summer of Code</a> program.</p>
+
+<p>Right now I work as a consultant for <a href="https://www.timble.net/" target="_blank">Timble</a> where I lead the <a href="https://joomlatools.com/" target="_blank">Joomlatools</a> brand and build things for the web.</p>

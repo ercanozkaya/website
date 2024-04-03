@@ -1,0 +1,61 @@
+baseurl = "http://www.ercanozkaya.com"
+title = "Ercan Özkaya"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Ercan Özkaya"
+  info = "Full Stack Software Engineer"
+  description = "Ercan Özkaya - Full Stack Software Engineer"
+  keywords = "blog,developer,personal"
+  #avatarurl = "https://s.gravatar.com/avatar/8756e6aeb6d2cffc983a22585b13ab3a?s=200"
+  gravatar = "ercan@ozkaya.net"
+
+  since = 2019
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+[params.cloudflare]
+    token = "abf2e90e9cfa4b56b3971f71511bbdd7"
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+disableKinds = ['taxonomy', 'term', 'RSS']
+[taxonomies]
+
+[outputs]
+  home     = ["HTML"]
+  section  = ["HTML"]
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/ercanozkaya/"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa-brands fa-x-twitter fa-2x"
+  weight = 3
+  url = "https://twitter.com/ercanozkaya/"
+[[params.social]]
+    name = "Linkedin"
+    icon = "fa-brands fa-linkedin fa-2x"
+    weight = 2
+    url = "https://www.linkedin.com/in/ercanozkaya/"
+[[params.social]]
+    name = "Email"
+    icon = "fa-solid fa-envelope fa-2x"
+    weight = 4
+    url = "mailto:ercan@ozkaya.net"
